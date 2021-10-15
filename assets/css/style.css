@@ -44,7 +44,15 @@ body{
     align-items: center;
 }
 .btn{
-    
+    background-color: rgb(230, 152, 8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
 /* reset code and common code reset end here */
 
@@ -133,7 +141,7 @@ nav li:hover{
 }
 .card-container{
     display: flex;
-    align-items: center  ;
+    align-items: center;
 }
 .card{
     flex: 1;
@@ -177,6 +185,11 @@ nav li:hover{
         align-items: center;
         margin-bottom: 5rem;
     }
+    .card-container{
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
 }
 @media (max-width: 768px) {
@@ -186,7 +199,11 @@ nav li:hover{
     #blog-banner-section article{
         width: 80%;
     }
+    .card-container{
+        width: 50%;
+    }
 }
+
 @media (max-width: 600px) {
     html{
         font-size: 48.5%;
@@ -209,7 +226,21 @@ nav li:hover{
     #blog-banner-section article{
         width: 90%;
     }
+    .banner-img{
+        max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container{
+        width: 90%;
+    }
 }
+
 @media (max-width: 400px) {
     
 }
