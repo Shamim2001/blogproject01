@@ -1,0 +1,9 @@
+Blog project
+
+part-1:
+  1. Starting template
+  2. Basic stacture of HTML
+  3. link CSS
+  4. Reset code in CSS
+  5. Add font awesome CDN
+  6. Get the assets -images
