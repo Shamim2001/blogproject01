@@ -259,6 +259,51 @@ nav li:hover{
 }
 /* blog post ends here */
 
+/* contact section starts here */
+#contact-section{
+    padding: 5rem;
+    min-height: 95vh;
+    background-color: #4c4c4c;
+    color: #fff;
+}
+#contact-form{
+    padding: 1rem;
+    box-shadow: -0.1rem 0 0.1rem 0.1rem #222;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.contact-btn{
+    width: 30%;
+}
+.form-field{
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact section ends here */
+
 /* responsive starts here */
 @media (max-width: 992px) {
     #blog-banner-section{
@@ -291,11 +336,16 @@ nav li:hover{
     #archives{
         min-height: auto;
     }
+
     /* blog post resposive here */
     .blog-post{
         flex-direction: column;
         margin-bottom: 3rem;
         width: 80%;
+    }
+
+    #contact-section{
+        width: auto;
     }
 }
 
@@ -343,9 +393,20 @@ nav li:hover{
     .blog-post{
         width: 90%;
     }
+
+    #contact-section{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width: 400px) {
     
 }
+
 /* responsive ends here */
